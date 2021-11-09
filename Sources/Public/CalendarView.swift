@@ -115,6 +115,10 @@ public final class CalendarView: UIView {
     visibleItemsDetails?.visibleDayRange
   }
 
+  public func setScrollEnabled(_ isScrollEnabled: Bool) {
+      scrollView.isScrollEnabled = isScrollEnabled
+   }
+
   /// `CalendarView` only supports positive values for `layoutMargins`. Negative values will be changed to `0`.
   public override var layoutMargins: UIEdgeInsets {
     get { super.layoutMargins }
